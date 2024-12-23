@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class GenreController extends Controller
 {
-    public function getAllGenres()
+    public function index()
     {
         $genres = Product::select('category') 
             ->distinct()  
